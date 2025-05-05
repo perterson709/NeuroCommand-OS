@@ -2,28 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeuroCommand OS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Bookshelf</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🧠 NeuroCommand OS</h1>
-    <div class="card-grid">
-      <div class="card" id="daily-goals">
-        <h2>🎯 Daily Goals</h2>
-        <ul>
-          <li>Read 10 pages</li>
-          <li>Code 1 hour</li>
-          <li>Reflect in journal</li>
-        </ul>
+    <header>
+      <h1>📚 Elite Bookshelf</h1>
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search books...">
+        <button id="darkModeToggle">🌓</button>
       </div>
-      <div class="card" id="quote">
-        <h2>📖 Quote</h2>
-        <blockquote id="quote-text">Discipline is destiny.</blockquote>
-      </div>
-    </div>
+    </header>
+
+    <main id="bookshelf" class="bookshelf-grid"></main>
+    
+    <footer>
+      <p>Built by your future self. ⚡️</p>
+    </footer>
   </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
